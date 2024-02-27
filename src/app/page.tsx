@@ -57,8 +57,8 @@ export default async function Home() {
                 Testing Subscriptions
               </h4>
               <p className="mb-5">
-                You can test the subscriptions by using one of the test cards
-                that Stripe provides.
+                This store is in test mode. You can test the subscriptions by
+                using one of the test cards that Stripe provides.
               </p>
 
               <a
