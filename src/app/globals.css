@@ -36,3 +36,17 @@ body {
   color: transparent !important;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+.advanced-cropper {
+  color: #00c0ff !important;
+}
+
+.advanced-cropper .advanced-cropper-simple-line {
+  border-color: currentColor;
+}
+
+.advanced-cropper .advanced-cropper-simple-handler {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}

@@ -79,7 +79,7 @@ export default function GenerateImage({
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-2">
+    <div className="flex flex-col grow md:flex-row gap-2">
       <Input type="text" onChange={onPromptChange} />
       <Button disabled={!canGenerate} onClick={generate}>
         Generate

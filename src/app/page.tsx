@@ -35,7 +35,7 @@ export default async function Home() {
     const canEditImages = sub?.plan.parameters.edits > editCount;
 
     return (
-      <div className="w-full">
+      <div className="w-full max-w-[900px]">
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <h1 className="text-xl font-semibold mb-2">Hello, {user?.name}</h1>
           <div className="flex gap-2">
@@ -50,7 +50,26 @@ export default async function Home() {
             createEdit={createEdit}
           />
         ) : (
-          <PlanList plans={plans.data} />
+          <div className="max-w-[600px]">
+            <PlanList plans={plans.data} />
+            <div className="w-full md:max-w-[600px] bg-blue-100 text-blue-600 mt-12 p-5 px-7 rounded-lg">
+              <h4 className="text-blue-800 mb-3 font-semibold text-lg">
+                Testing Subscriptions
+              </h4>
+              <p className="mb-5">
+                You can test the subscriptions by using one of the test cards
+                that Stripe provides.
+              </p>
+
+              <a
+                href="https://docs.stripe.com/testing?locale=en-GB#use-test-cards"
+                target="_blank"
+                className="inline-block bg-blue-700 hover:bg-blue-800 text-white p-2 px-4 mb-2 rounded-lg"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
         )}
       </div>
     );

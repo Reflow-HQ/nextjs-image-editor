@@ -10,7 +10,7 @@ export default function Input({ type = "text", onChange }: InputProps) {
     <input
       type={type}
       onChange={onChange}
-      className="bg-transparent border border-gray-300 text-slate-300 rounded-lg min-w-0 px-5 py-2.5"
+      className="grow bg-transparent border border-gray-300 text-slate-300 rounded-lg min-w-0 px-5 py-2.5"
     />
   );
 }
