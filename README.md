@@ -1,8 +1,12 @@
-This is a Next.js 14 example that demonstrates using Reflow's Subscriptions plan parameters.
+This is a Next.js 14 image editor powered by OpenAI's DALL-E 2 model. It lets users upload photos, select areas and edit them by writing prompts. The app comes with user accounts and is ready to accept payments with Stripe subscriptions.
+
+Read the full step-by-step tutorial on how we built this app from scratch [here](https://reflowhq.com/learn/image-editor-dall-e-next).
+
+![Image Editor](image-editor.jpg)
 
 # Getting Started
 
-To run the example, follow these steps
+To run the app, follow these steps
 
 1. `npm install` the dependencies in this folder
 2. Duplicate the `.env.local.example` file and rename it to `.env.local`.Enter your Reflow store ID, OpenAI API key and add a secret 32 char string. One way to generate a random string on unix-like systems is with this command:
