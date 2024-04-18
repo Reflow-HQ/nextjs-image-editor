@@ -16,7 +16,7 @@ export default async function Home() {
 
   async function getPlans() {
     "use server";
-    const res = await fetch(`${auth.apiBase}/stores/${auth.storeID}/plans/`);
+    const res = await fetch(`${auth.apiBase}/projects/${auth.projectID}/plans/`);
     return res.json();
   }
 
@@ -57,7 +57,7 @@ export default async function Home() {
                 Testing Subscriptions
               </h4>
               <p className="mb-5">
-                This store is in test mode. You can test the subscriptions by
+                This project is in test mode. You can test the subscriptions by
                 using one of the test cards that Stripe provides.
               </p>
 
